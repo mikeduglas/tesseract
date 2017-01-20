@@ -1,0 +1,41 @@
+!Generated .INC file (by the EasyCOM2INC v 2.14)
+!IDL filename: cwTesseract.idl
+
+!*********** Interfaces ***********
+!ICWTesseract
+!IDispatch
+!IUnknown
+!*********** End of Interfaces ***********
+
+!*********** Data types ***********
+!*********** End of Data types ***********
+
+
+!*********** interfaces ***********
+IID_ICWTesseract                GROUP
+data1                             LONG(0A5A7AEC7H)
+data2                             SHORT(0A09FH)
+data3                             SHORT(480DH)
+data4                             STRING('<9AH><66H><79H><52H><0ADH><77H><27H><76H>')
+                                END
+ICWTesseract                    INTERFACE(IDispatch),COM,TYPE
+CreateEngine                      PROCEDURE(BSTRING datapath,BSTRING language),HRESULT,RAW,PROC
+DisposeEngine                     PROCEDURE(),HRESULT,RAW,PROC
+GetTextFromFile                   PROCEDURE(BSTRING imagefile,*BSTRING pRetVal),HRESULT,RAW,PROC
+GetTextFromBitmap                 PROCEDURE(VARIANT bytearr,*BSTRING pRetVal),HRESULT,RAW,PROC
+                                END
+
+!*********** Coclasses ***********
+!coclass CWTesseract                                                                                         
+IID_CWTesseract                 GROUP
+data1                             LONG(36657D15H)
+data2                             SHORT(0A999H)
+data3                             SHORT(4CD8H)
+data4                             STRING('<0BFH><0F6H><0FBH><0F2H><18H><41H><39H><7CH>')
+                                END
+!CWTesseract                     CLASS,TYPE
+!_Object                           &_Object
+!ICWTesseract                      &ICWTesseract
+!                                END
+CWTesseract                     INTERFACE(IUnknown),COM,TYPE
+                                END
