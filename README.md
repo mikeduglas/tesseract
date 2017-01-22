@@ -12,7 +12,7 @@ Microsoft .NET 4.5.
 
 ##How to run demo program
 Copy all dll files from \bin folder into demo folder. Exe folder should looks like this:
-- \testdata
+- \tessdata
  - language files (test program supports only English)
 - \x86
  - liblept172.dll
