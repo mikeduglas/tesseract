@@ -27,9 +27,23 @@ ocr                           TTesseract
   CODE
   IF ocr.CreateEngine('.\tessdata', 'eng')
     
+    imgFile = 'phototest.bmp'
+    
     OPEN(Window)
     ACCEPT
+      CASE EVENT()
+      OF EVENT:OpenWindow
+        ?IMAGE1{PROP:Text} = imgFile
+        DISPLAY(?IMAGE1)
+      END
+      
       CASE ACCEPTED()
+      OF ?imgFile
+        ?IMAGE1{PROP:Text} = imgFile
+        DISPLAY(?IMAGE1)
+        ?TEXT1{PROP:Text} = ''
+        DISPLAY(?TEXT1)
+
       OF ?bSelectImage
         IF FILEDIALOG(, imgFile, |
         'Portable Network Graphics (*.png)|*.png|'&|
@@ -44,6 +58,8 @@ ocr                           TTesseract
           DISPLAY(?TEXT1)
         END
                 
+        DISPLAY(?imgFile)
+        
       OF ?bGetText
         IF imgFile
           SETCURSOR(CURSOR:Wait)
