@@ -5,6 +5,19 @@ Tesseract is Open Source OCR (Optical character recognition).
 
 ## v5.00
 
+### Input supported
+Any image readable by Leptonica is supported in Tesseract including BMP, PNM, PNG, JFIF, JPEG, TIFF and GIF.  
+
+### Output formats
+- Tesseract has unicode (UTF-8) support, and can recognize more than 100 languages "out of the box".
+- Tesseract supports various output formats: plain text, hOCR (HTML), PDF, invisible-text-only PDF, TSV. The master branch also has experimental support for ALTO (XML) output.  
+- This wrapper now supports plain text and hOCR (HTML).
+
+### What's in the package
+- libtesseract classes
+- [Resizeable controls classes](https://yadi.sk/d/gQ9S-tN2hyUwTA)
+- [Demo program](https://yadi.sk/d/0uMA7pUxUQ3zYw)
+
 ### Demo application
 The demo supports 2 languages: English and Russian (other languages on demand), and can output to text or html.
 
@@ -24,7 +37,7 @@ The demo supports 2 languages: English and Russian (other languages on demand), 
 https://yadi.sk/d/0uMA7pUxUQ3zYw  
 
 ### Requirements
-- C6 or higher *C5 on demand)
+- C6 or higher (C5 on demand)
 
 ### Price
 300 euros  
