@@ -24,3 +24,6 @@ Copy all dll files from \bin folder into demo folder. Exe folder should looks li
 
 ### How to build
 You must have free [EasyCOM2INC](http://www.ingasoftplus.com/ProductDetail.php?ProductID=24) installed to use base COM classes.
+
+### Price
+Free
