@@ -3,7 +3,7 @@
 Tesseract is Open Source OCR (Optical character recognition).  
 [Home page](https://github.com/tesseract-ocr/tesseract)  
 
-## v5.00
+## v5.x
 
 ### Input supported
 Any image readable by Leptonica is supported in Tesseract including BMP, PNM, PNG, JFIF, JPEG, TIFF and GIF.  
@@ -13,12 +13,7 @@ Any image readable by Leptonica is supported in Tesseract including BMP, PNM, PN
 - Tesseract supports various output formats: plain text, hOCR (HTML), PDF, invisible-text-only PDF, TSV. The master branch also has experimental support for ALTO (XML) output.  
 - This wrapper now supports plain text and hOCR (HTML).
 
-### What's in the package
-- libtesseract classes
-- [Resizeable controls classes](https://yadi.sk/d/gQ9S-tN2hyUwTA)
-- [Demo program](https://yadi.sk/d/0uMA7pUxUQ3zYw)
-
-### Demo application
+### Demo application (ocrdemo.exe)
 The demo supports 2 languages: English and Russian (other languages on demand), and can output to text or html.
 
 #### Usage
@@ -40,7 +35,7 @@ https://yadi.sk/d/0uMA7pUxUQ3zYw
 - C6 or higher (C5 on demand)
 
 ### Price
-300 euros  
+[Buy now](https://www.clarionshop.com/checkout.cfm?pid=1662&q=1)  
 
 ## [v3.04](https://github.com/mikeduglas/tesseract/tree/master/v3.04)
 A .NET wrapper for [tesseract-ocr 3.04](https://github.com/tesseract-ocr/tesseract/releases/tag/3.04.01).  
